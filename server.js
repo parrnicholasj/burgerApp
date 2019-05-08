@@ -1,4 +1,6 @@
 
+require('dotenv').config()
+
 const express = require('express');
 const exphbs = require('express-handlebars');
 
@@ -29,4 +31,4 @@ app.get('*', function(req, res) {
 });
 
 // turn on server
-app.listen(PORT, () => console.log(`🌍 => listening to http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`listening to http://localhost:${PORT}`));
